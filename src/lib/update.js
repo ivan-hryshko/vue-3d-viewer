@@ -19,6 +19,7 @@ export const file = async (file, extension, transfer, theme, progress) =>
 
   //Parse and load
   const meshes = await parser(file, extension, transfer, theme, progress);
+  console.log('meshes :>> ', meshes);
 
   //Save for later manipulation
   state.meshes = meshes;

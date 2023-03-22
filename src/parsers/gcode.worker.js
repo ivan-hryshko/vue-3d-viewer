@@ -103,7 +103,7 @@ const worker = {
           //Secondary
           else
           {
-            secondaryVertices.push(line.x, line.y, line.z);
+            // secondaryVertices.push(line.x, line.y, line.z);
           }
         }
 
