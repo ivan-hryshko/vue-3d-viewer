@@ -103,7 +103,7 @@ const worker = {
           //Secondary
           else
           {
-            // secondaryVertices.push(line.x, line.y, line.z);
+            secondaryVertices.push(line.x, line.y, line.z);
           }
         }
 
@@ -137,7 +137,8 @@ const worker = {
       previousProgress = progress;
     }
 
-    return {primaryVertices, secondaryVertices};
+    // return {primaryVertices, secondaryVertices};
+    return { primaryVertices };
   }
 };
 

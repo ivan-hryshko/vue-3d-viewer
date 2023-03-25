@@ -18,8 +18,9 @@ export default async (file, extension, transfer, theme, progress) =>
     {
       //Load and parse the file; convert to ThreeJS mesh
       const meshes = await unifiedParser(file, format, transfer, theme, progress);
-      
-      return meshes;
+      console.log('meshes :>> ', meshes);
+      const cutMesh = meshes.slice(0);
+      return cutMesh;
     }
   }
 
@@ -28,7 +29,8 @@ export default async (file, extension, transfer, theme, progress) =>
   {
     //Load and parse the file; convert to ThreeJS lines
     const lines = await gcodeParser(file, transfer, theme, progress);
-
-    return lines;
+    console.log('lines :>> ', lines);
+    const cutLines = lines.slice(0);
+    return cutLines;
   }
 };
