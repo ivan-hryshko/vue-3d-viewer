@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-/dist
 
 # Cypress
 tests/e2e/screenshots/*
